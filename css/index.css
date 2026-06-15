@@ -195,7 +195,7 @@ img {
 }
 
 .copyright {
-    font-size: 14px; /* ptからpxへのアレンジ、バッチリです！ */
+    font-size: 14px; 
     font-weight: bold;
     margin-top: 90px;
 }
