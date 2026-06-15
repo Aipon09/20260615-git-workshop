@@ -19,7 +19,7 @@ a {
 
 body {
     font-family: sans-serif;
-    font-size: 16pt;
+    font-size: 16pt; /* ptのまま維持 */
     color: #000000;
     line-height: 1;
     background-color: #ffffff;
@@ -41,10 +41,6 @@ img {
     align-items: center;
 }
 
-.toggle-menu-button {
-    display: none; 
-}
-
 .header-logo {
     display: block;
     width: 170px;
@@ -60,7 +56,11 @@ img {
 }
 
 .site-menu ul li a {
-    font-family: 'Cherry Bomb One', cursive;
+    font-family: 'Cherry Bomb One', cursive; 
+}
+
+.toggle-menu-button {
+    display: none; 
 }
 
 .footer {
@@ -80,22 +80,13 @@ img {
 }
 
 .copyright {
-    font-size: 14pt;
+    font-size: 14pt; /* ptのまま維持 */
     font-weight: bold;
     margin-top: 90px;
 }
 
 
 @media (max-width: 800px) {
-    .site-menu ul {
-        display: block;
-        text-align: center;
-    }
-
-    .site-menu li {
-        margin-top: 20px;
-    }
-
     .header {
         position: fixed;
         top: 0;
@@ -132,6 +123,15 @@ img {
         outline: none;
     }
 
+    .site-menu ul {
+        display: block;
+        text-align: center;
+    }
+
+    .site-menu li {
+        margin-top: 20px;
+    }
+
     .header-site-menu {
         position: absolute;
         top: 100%;
@@ -149,7 +149,7 @@ img {
     }
 
     .main {
-    padding-top: 50px;
+        padding-top: 50px;
     }
 
     .footer-logo {
@@ -159,5 +159,4 @@ img {
     .copyright {
         margin-top: 50px;
     }
-
 }
