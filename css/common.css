@@ -19,7 +19,7 @@ a {
 
 body {
     font-family: sans-serif;
-    font-size: 16pt; /* ptのまま維持 */
+    font-size: 16pt; 
     color: #000000;
     line-height: 1;
     background-color: #ffffff;
@@ -80,7 +80,7 @@ img {
 }
 
 .copyright {
-    font-size: 14pt; /* ptのまま維持 */
+    font-size: 14pt; 
     font-weight: bold;
     margin-top: 90px;
 }
