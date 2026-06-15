@@ -15,7 +15,7 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 40px;
+    padding-left: 40px; 
     padding-bottom: 80px;
     color: #ffffff;
     font-weight: bold;
@@ -98,10 +98,9 @@ img {
 }
 
 .site-menu ul li a {
-  font-family: "Cherry Bomb One", system-ui;
-  font-weight: 400;
-  font-style: normal;
-
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 @media (max-width: 800px) {
@@ -129,6 +128,23 @@ img {
         padding-left: 20px;
         padding-right: 20px;
         height: 100%;
+        position: relative; 
+    }
+
+    .header-site-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        color: #ffffff;
+        background-color: #736e62;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        display: none;
+    }
+
+    .header-site-menu.is-show {
+        display: block;
     }
 
     .header-logo {
@@ -145,6 +161,20 @@ img {
 
     .copyright {
         margin-top: 50px;
+    }
+
+    .toggle-menu-button {
+        display: block;
+        width: 44px;
+        height: 34px;
+        background-image: url(../images/common/icon-menu.png);
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        outline: none;
     }
 }
 
@@ -165,7 +195,7 @@ img {
 }
 
 .copyright {
-    font-size: 14px;
+    font-size: 14px; /* ptからpxへのアレンジ、バッチリです！ */
     font-weight: bold;
     margin-top: 90px;
 }
